@@ -7,6 +7,7 @@ const Trailer = ({ location: { state }, history, match, movie }) => {
     <div>
       <h1 style={{ color: "#92FE9D" }}>Movie Trailer</h1>
       <h2 style={{ color: "#00C9FF" }}>{state.movie.name}</h2>
+      <h4>{state.movie.description}</h4>
 
       <YouTube videoId={state.movie.video} />
 
